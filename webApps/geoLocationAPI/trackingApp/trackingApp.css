@@ -1,0 +1,32 @@
+body{
+    background-color: black;
+    color: white;
+    margin: 10% 35%;
+    text-align: center;
+}
+#track, #stopTracking{
+    padding: 11px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-variant: small-caps;
+    border: 0;
+    border-radius: 14px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+#track{
+    margin-right: 20px;
+    background-color: yellow;
+}
+#stopTracking{
+    background-color: tomato;
+}
+#location, #distance, #map{
+    margin-bottom: 20px;
+}
+#location{
+    margin-top: 10px;
+}
+#map{
+    height: 400px;
+    width: 400px;
+}

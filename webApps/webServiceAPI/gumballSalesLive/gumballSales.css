@@ -1,0 +1,9 @@
+body{
+    margin: 2% 35%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.saleItem{
+    padding: 5px 0px;
+    margin: 15px 0px;
+    background-color: rgb(219, 201, 201);
+}

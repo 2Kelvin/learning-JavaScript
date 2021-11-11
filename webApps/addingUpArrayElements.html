@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just another array test code</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Adding up each array element</h1>
+
+    <script>
+        function addUp(numArray) {
+            var total = 0;
+            for (var i = 0; i < numArray.length; i++) {
+                // what does += even mean????
+                total += numArray[i];
+            }
+            return total;
+        }
+
+        var theTotal = addUp([1, 5, 3, 9]);
+        console.log(theTotal);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For in on objects</title>
+</head>
+
+<body>
+    <h1>For in displaying all properties an object has</h1>
+
+    <script>
+        function Dog(name, breed, weight) {
+            this.name = name;
+            this.breed = breed;
+            this.weight = weight;
+        }
+
+        var fido = new Dog("Fido", "Mixed", 32);
+        Dog.prototype.howl = true;
+        // checking fido's properties using for in
+        var property;
+        for (property in fido) {
+            console.log("Fido has a " + property + " property");
+        }
+
+    </script>
+</body>
+
+</html>

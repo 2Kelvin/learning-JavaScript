@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice-cream Scoops</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Ice-cream scoops</h1>
+    <script>
+        var scoops = 10;
+        while (scoops >= 0) {
+            if (scoops == 3) {
+                console.log("ice-cream is running low!");
+            } else if (scoops > 9) {
+                console.log("Eat faster, the ice-cream is going to melt!");
+            } else if (scoops == 2) {
+                console.log("Going once!");
+            } else if (scoops == 1) {
+                console.log("Going twice!");
+            } else if (scoops == 0) {
+                console.log("Gone!");
+            } else {
+                console.log("still lots of ice-cream left, come and get it!");
+            }
+            scoops = scoops - 1;
+        }
+        console.log("life without ice-cream isn't the same");
+    </script>
+</body>
+
+</html>

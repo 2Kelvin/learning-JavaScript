@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperatures by Hour</title>
+</head>
+
+<body>
+    <h1>Temperatures by Hour</h1>
+    <ul>
+        <li id="temp0"></li>
+        <li id="temp1"></li>
+        <li id="temp2"></li>
+        <li id="temp3"></li>
+        <li id="temp4"></li>
+    </ul>
+    <script>
+        window.onload = function () {
+            var tempByHour = new Array();
+
+            tempByHour[0] = 59.2;
+            tempByHour[1] = 60.1;
+            tempByHour[2] = 63;
+            tempByHour[3] = 65;
+            tempByHour[4] = 62;
+
+            for (var i = 0; i < tempByHour.length; i++) {
+                var theTemp = tempByHour[i];
+                var id = "temp" + i;
+                var li = document.getElementById(id);
+
+                if (i == 0) {
+                    li.innerHTML = "The temperature at noon was " + theTemp;
+                } else {
+                    li.innerHTML = "The temperature at " + i + " was " + theTemp;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
